@@ -1,31 +1,69 @@
-# Speech Emotion Recognition (SER)
+# 🎙️ Speech Emotion Recognition (SER) with Streamlit  
 
-## Overview
-This project aims to develop a model that can recognize emotions from audio recordings. The model processes .wav audio files, extracts relevant features, and classifies the emotions expressed in the speech.
+## 📌 Project Overview  
+This project focuses on building a machine learning system that can recognize human emotions from speech.  
+Using **audio feature extraction** (MFCCs, chroma, spectral features) and **machine learning models**, the system predicts emotions such as happiness, sadness, anger, and neutrality.  
 
-## Features
-- Preprocessing of audio files
-- Extraction of Mel-frequency cepstral coefficients (MFCCs)
-- Emotion classification using machine learning algorithms
-- Streamlit app for real-time emotion recognition
+To make the solution interactive, the project is **deployed as a Streamlit web application** where users can upload audio files and receive real-time emotion predictions.  
 
-## Usage
-1. Data Preparation: Place your .wav audio files in the data/ directory.
-2. Run the Preprocessing: Execute the preprocessing script to extract features:
-       python preprocess.py
-    3. Train the Model: Run the training script:
-       python train.py
-    4. Run the Streamlit App:
-       streamlit run app.py
-    
-## Data
-The dataset used for training can be found https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess. Ensure to follow the data usage policies and citation requirements.
+---
 
-## Model Training
-The model is trained using  MFCC and LSTM on the extracted features. Training parameters can be adjusted in the speech_emotion_recognition.ipynb file.
+## 🚀 Features  
+- Extracts features from audio using **Librosa**  
+- Trains multiple classifiers (Logistic Regression, Random Forest, SVM)  
+- Evaluates models with accuracy, confusion matrix, and F1-score  
+- Interactive **Streamlit app** for real-time emotion recognition  
+- Deployed on **Streamlit Cloud**  
 
-## Results
-Upon successful training, you can evaluate the model's performance. Metrics such as accuracy, precision, and recall are reported and deployed further on.
+---
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+## 🛠️ Tech Stack  
+- **Programming Language:** Python  
+- **Libraries:** Librosa, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn  
+- **Deployment:** Streamlit, Streamlit Cloud  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 📂 Project Structure  
+```bash
+├── data/                 # Audio dataset (not included in repo due to size)
+├── notebooks/
+│   ├── Speech_Emotion_Recognition.ipynb       # Training and evaluation
+│   └── Speech_Emotion_Recognition_Deploy.ipynb # Streamlit deployment notebook
+├── app.py                # Streamlit app script
+├── README.md             # Project documentation
+```
+
+---
+
+## ⚙️ Installation & Setup  
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/yourusername/speech-emotion-recognition.git
+cd speech-emotion-recognition
+```
+
+2. **Run the Streamlit app**  
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🎮 Usage  
+1. Open the app in your browser.  
+2. Upload an audio file.  
+3. View the predicted emotion in real-time.  
+
+---
+
+## 📊 Results  
+- Best-performing model: **Random Forest Classifier**  
+- Accuracy: **XX%** (replace with your actual result)  
+- Insights: MFCC features contributed most to emotion classification.  
+
+---
+
+

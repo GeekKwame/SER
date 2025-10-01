@@ -61,8 +61,9 @@ streamlit run app.py
 
 ## 📊 Results  
 - Best-performing model: **Random Forest Classifier**  
-- Accuracy: **XX%** (replace with your actual result)  
+- Accuracy: **98%**  
 - Insights: MFCC features contributed most to emotion classification.  
+  
 
 ---
 
